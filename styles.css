@@ -37,6 +37,38 @@ body {
     direction: rtl;
 }
 
+/* Language Toggle Button */
+.lang-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lang-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+[dir="ltr"] .lang-toggle {
+    right: auto;
+    left: 20px;
+}
+
+
 /* Floating Particles */
 .particles {
     position: fixed;

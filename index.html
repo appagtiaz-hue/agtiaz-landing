@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" id="htmlRoot">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
+    <meta name="description" id="metaDescription"
         content="اجتياز - تطبيقك الأمثل للتحضير لاختبار الرخصة المهنية للمعلمين. أكثر من 2500 سؤال تغطي جميع المعايير التربوية والتخصصية.">
     <meta name="keywords"
         content="اختبار الرخصة المهنية, المعلمين, تطبيق تعليمي, اجتياز, Saudi Arabia, Teachers License">
     <meta name="author" content="Agtiaz">
-    <title>اجتياز | تطبيق التحضير لاختبار الرخصة المهنية للمعلمين</title>
+    <title id="pageTitle">اجتياز | تطبيق التحضير لاختبار الرخصة المهنية للمعلمين</title>
 
     <!-- Google Fonts - Cairo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +21,9 @@
 </head>
 
 <body>
+    <!-- Language Toggle Button -->
+    <button class="lang-toggle" onclick="toggleLanguage()" id="langBtn">English</button>
+
     <!-- Floating particles background -->
     <div class="particles" id="particles"></div>
 
@@ -31,7 +34,7 @@
             <!-- Development Badge -->
             <div class="dev-badge">
                 <span class="pulse"></span>
-                <span>قيد التطوير</span>
+                <span id="devBadge">قيد التطوير</span>
             </div>
 
             <!-- Logo -->
@@ -42,49 +45,49 @@
 
             <!-- App Title -->
             <h1 class="title">إجتياز</h1>
-            <p class="subtitle">تطبيقك الأمثل للتحضير لاختبار الرخصة المهنية للمعلمين</p>
+            <p class="subtitle" id="subtitle">تطبيقك الأمثل للتحضير لاختبار الرخصة المهنية للمعلمين</p>
         </header>
 
         <!-- Features Section -->
         <section class="features">
             <div class="feature-card">
                 <div class="feature-icon">📚</div>
-                <h3>+2500 سؤال</h3>
-                <p>أسئلة شاملة تغطي جميع المعايير التربوية والتخصصية</p>
+                <h3 id="feature1Title">+2500 سؤال</h3>
+                <p id="feature1Text">أسئلة شاملة تغطي جميع المعايير التربوية والتخصصية</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">📊</div>
-                <h3>تتبع تقدمك</h3>
-                <p>إحصائيات مفصلة ومراجعة الأخطاء مع تبرير لكل إجابة</p>
+                <h3 id="feature2Title">تتبع تقدمك</h3>
+                <p id="feature2Text">إحصائيات مفصلة ومراجعة الأخطاء مع تبرير لكل إجابة</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🎯</div>
-                <h3>اختبارات متنوعة</h3>
-                <p>اختبارات مجانية ومدفوعة بخطط متعددة تناسب احتياجاتك</p>
+                <h3 id="feature3Title">اختبارات متنوعة</h3>
+                <p id="feature3Text">اختبارات مجانية ومدفوعة بخطط متعددة تناسب احتياجاتك</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🏆</div>
-                <h3>ضمان النجاح</h3>
-                <p>محتوى محدث باستمرار لضمان تحقيق أفضل النتائج</p>
+                <h3 id="feature4Title">ضمان النجاح</h3>
+                <p id="feature4Text">محتوى محدث باستمرار لضمان تحقيق أفضل النتائج</p>
             </div>
         </section>
 
         <!-- Plans Section -->
         <section class="plans-section">
-            <h2 class="section-title">خطط الاشتراك</h2>
+            <h2 class="section-title" id="plansTitle">خطط الاشتراك</h2>
             <div class="plans">
                 <div class="plan-card silver">
-                    <div class="plan-badge">فضي</div>
-                    <h4>الخطة الفضية</h4>
-                    <p>1000 سؤال</p>
+                    <div class="plan-badge" id="silverBadge">فضي</div>
+                    <h4 id="silverTitle">الخطة الفضية</h4>
+                    <p id="silverQuestions">1000 سؤال</p>
                 </div>
                 <div class="plan-card gold">
-                    <div class="plan-badge">ذهبي</div>
-                    <h4>الخطة الذهبية</h4>
-                    <p>2500 سؤال</p>
+                    <div class="plan-badge" id="goldBadge">ذهبي</div>
+                    <h4 id="goldTitle">الخطة الذهبية</h4>
+                    <p id="goldQuestions">2500 سؤال</p>
                 </div>
             </div>
         </section>
@@ -92,8 +95,8 @@
         <!-- Coming Soon Section -->
         <section class="coming-soon">
             <div class="coming-soon-content">
-                <h2>🚀 قريباً على المتاجر</h2>
-                <p>التطبيق حالياً في مرحلة التطوير النهائية وسيتوفر قريباً على:</p>
+                <h2 id="comingSoonTitle">🚀 قريباً على المتاجر</h2>
+                <p id="comingSoonText">التطبيق حالياً في مرحلة التطوير النهائية وسيتوفر قريباً على:</p>
                 <div class="store-badges">
                     <div class="store-badge">
                         <span class="store-icon">🍎</span>
@@ -109,13 +112,110 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>© 2025 اجتياز. جميع الحقوق محفوظة.</p>
-            <p class="contact">للتواصل: appagtiaz@gmail.com</p>
+            <p id="copyright">© 2025 اجتياز. جميع الحقوق محفوظة.</p>
+            <p class="contact" id="contactText">للتواصل: appagtiaz@gmail.com</p>
             <p class="domain">🌐 <a href="https://agtiaz.online" target="_blank">agtiaz.online</a></p>
         </footer>
     </div>
 
     <script>
+        // Translations
+        const translations = {
+            ar: {
+                pageTitle: 'اجتياز | تطبيق التحضير لاختبار الرخصة المهنية للمعلمين',
+                metaDescription: 'اجتياز - تطبيقك الأمثل للتحضير لاختبار الرخصة المهنية للمعلمين. أكثر من 2500 سؤال تغطي جميع المعايير التربوية والتخصصية.',
+                langBtn: 'English',
+                devBadge: 'قيد التطوير',
+                subtitle: 'تطبيقك الأمثل للتحضير لاختبار الرخصة المهنية للمعلمين',
+                feature1Title: '+2500 سؤال',
+                feature1Text: 'أسئلة شاملة تغطي جميع المعايير التربوية والتخصصية',
+                feature2Title: 'تتبع تقدمك',
+                feature2Text: 'إحصائيات مفصلة ومراجعة الأخطاء مع تبرير لكل إجابة',
+                feature3Title: 'اختبارات متنوعة',
+                feature3Text: 'اختبارات مجانية ومدفوعة بخطط متعددة تناسب احتياجاتك',
+                feature4Title: 'ضمان النجاح',
+                feature4Text: 'محتوى محدث باستمرار لضمان تحقيق أفضل النتائج',
+                plansTitle: 'خطط الاشتراك',
+                silverBadge: 'فضي',
+                silverTitle: 'الخطة الفضية',
+                silverQuestions: '1000 سؤال',
+                goldBadge: 'ذهبي',
+                goldTitle: 'الخطة الذهبية',
+                goldQuestions: '2500 سؤال',
+                comingSoonTitle: '🚀 قريباً على المتاجر',
+                comingSoonText: 'التطبيق حالياً في مرحلة التطوير النهائية وسيتوفر قريباً على:',
+                copyright: '© 2025 اجتياز. جميع الحقوق محفوظة.',
+                contactText: 'للتواصل: appagtiaz@gmail.com'
+            },
+            en: {
+                pageTitle: 'Agtiaz | Teachers Professional License Test Preparation App',
+                metaDescription: 'Agtiaz - Your optimal app for preparing for the Teachers Professional License Test. More than 2500 questions covering all educational and specialized standards.',
+                langBtn: 'العربية',
+                devBadge: 'In Development',
+                subtitle: 'Your optimal app for preparing for the Teachers Professional License Test',
+                feature1Title: '+2500 Questions',
+                feature1Text: 'Comprehensive questions covering all educational and specialized standards',
+                feature2Title: 'Track Your Progress',
+                feature2Text: 'Detailed statistics and error review with justification for each answer',
+                feature3Title: 'Diverse Tests',
+                feature3Text: 'Free and paid tests with multiple plans to suit your needs',
+                feature4Title: 'Success Guarantee',
+                feature4Text: 'Constantly updated content to ensure the best results',
+                plansTitle: 'Subscription Plans',
+                silverBadge: 'Silver',
+                silverTitle: 'Silver Plan',
+                silverQuestions: '1000 Questions',
+                goldBadge: 'Gold',
+                goldTitle: 'Gold Plan',
+                goldQuestions: '2500 Questions',
+                comingSoonTitle: '🚀 Coming Soon to Stores',
+                comingSoonText: 'The app is currently in final development and will be available soon on:',
+                copyright: '© 2025 Agtiaz. All rights reserved.',
+                contactText: 'Contact: appagtiaz@gmail.com'
+            }
+        };
+
+        let currentLang = 'ar';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+            const html = document.getElementById('htmlRoot');
+            const lang = translations[currentLang];
+
+            // Update direction and language
+            html.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+            html.setAttribute('lang', currentLang);
+
+            // Update all content
+            document.getElementById('pageTitle').textContent = lang.pageTitle;
+            document.getElementById('metaDescription').setAttribute('content', lang.metaDescription);
+            document.getElementById('langBtn').textContent = lang.langBtn;
+            document.getElementById('devBadge').textContent = lang.devBadge;
+            document.getElementById('subtitle').textContent = lang.subtitle;
+
+            document.getElementById('feature1Title').textContent = lang.feature1Title;
+            document.getElementById('feature1Text').textContent = lang.feature1Text;
+            document.getElementById('feature2Title').textContent = lang.feature2Title;
+            document.getElementById('feature2Text').textContent = lang.feature2Text;
+            document.getElementById('feature3Title').textContent = lang.feature3Title;
+            document.getElementById('feature3Text').textContent = lang.feature3Text;
+            document.getElementById('feature4Title').textContent = lang.feature4Title;
+            document.getElementById('feature4Text').textContent = lang.feature4Text;
+
+            document.getElementById('plansTitle').textContent = lang.plansTitle;
+            document.getElementById('silverBadge').textContent = lang.silverBadge;
+            document.getElementById('silverTitle').textContent = lang.silverTitle;
+            document.getElementById('silverQuestions').textContent = lang.silverQuestions;
+            document.getElementById('goldBadge').textContent = lang.goldBadge;
+            document.getElementById('goldTitle').textContent = lang.goldTitle;
+            document.getElementById('goldQuestions').textContent = lang.goldQuestions;
+
+            document.getElementById('comingSoonTitle').textContent = lang.comingSoonTitle;
+            document.getElementById('comingSoonText').textContent = lang.comingSoonText;
+            document.getElementById('copyright').textContent = lang.copyright;
+            document.getElementById('contactText').textContent = lang.contactText;
+        }
+
         // Create floating particles
         function createParticles() {
             const container = document.getElementById('particles');
