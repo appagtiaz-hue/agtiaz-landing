@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="اجتياز - تطبيقك الأمثل للتحضير لاختبار الرخصة المهنية للمعلمين. أكثر من 2500 سؤال تغطي جميع المعايير التربوية والتخصصية.">
+    <meta name="keywords"
+        content="اختبار الرخصة المهنية, المعلمين, تطبيق تعليمي, اجتياز, Saudi Arabia, Teachers License">
+    <meta name="author" content="Agtiaz">
+    <title>اجتياز | تطبيق التحضير لاختبار الرخصة المهنية للمعلمين</title>
+
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="app_icon.png">
+</head>
+
+<body>
+    <!-- Floating particles background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <!-- Development Badge -->
+            <div class="dev-badge">
+                <span class="pulse"></span>
+                <span>قيد التطوير</span>
+            </div>
+
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="app_icon.png" alt="اجتياز Logo" class="logo">
+                <div class="logo-glow"></div>
+            </div>
+
+            <!-- App Title -->
+            <h1 class="title">إجتياز</h1>
+            <p class="subtitle">تطبيقك الأمثل للتحضير لاختبار الرخصة المهنية للمعلمين</p>
+        </header>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>+2500 سؤال</h3>
+                <p>أسئلة شاملة تغطي جميع المعايير التربوية والتخصصية</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>تتبع تقدمك</h3>
+                <p>إحصائيات مفصلة ومراجعة الأخطاء مع تبرير لكل إجابة</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>اختبارات متنوعة</h3>
+                <p>اختبارات مجانية ومدفوعة بخطط متعددة تناسب احتياجاتك</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>ضمان النجاح</h3>
+                <p>محتوى محدث باستمرار لضمان تحقيق أفضل النتائج</p>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section class="plans-section">
+            <h2 class="section-title">خطط الاشتراك</h2>
+            <div class="plans">
+                <div class="plan-card silver">
+                    <div class="plan-badge">فضي</div>
+                    <h4>الخطة الفضية</h4>
+                    <p>1000 سؤال</p>
+                </div>
+                <div class="plan-card gold">
+                    <div class="plan-badge">ذهبي</div>
+                    <h4>الخطة الذهبية</h4>
+                    <p>2500 سؤال</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon Section -->
+        <section class="coming-soon">
+            <div class="coming-soon-content">
+                <h2>🚀 قريباً على المتاجر</h2>
+                <p>التطبيق حالياً في مرحلة التطوير النهائية وسيتوفر قريباً على:</p>
+                <div class="store-badges">
+                    <div class="store-badge">
+                        <span class="store-icon">🍎</span>
+                        <span>App Store</span>
+                    </div>
+                    <div class="store-badge">
+                        <span class="store-icon">🤖</span>
+                        <span>Google Play</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 اجتياز. جميع الحقوق محفوظة.</p>
+            <p class="contact">للتواصل: appagtiaz@gmail.com</p>
+            <p class="domain">🌐 <a href="https://agtiaz.online" target="_blank">agtiaz.online</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 20) + 's';
+                container.appendChild(particle);
+            }
+        }
+
+        createParticles();
+    </script>
+</body>
+
+</html>
